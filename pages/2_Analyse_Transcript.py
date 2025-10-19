@@ -2,8 +2,7 @@
 
 from json import dumps as json_dumps
 import streamlit as st
-
-from meeting_summarise_etxrar import analyse_meeting  # uses your existing function
+from meeting_summariser import analyse_meeting
 
 st.set_page_config(page_title="Analyse Transcript", page_icon="🧠", layout="wide")
 st.title("🧠 Analyse Transcript")

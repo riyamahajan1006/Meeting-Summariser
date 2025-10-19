@@ -8,8 +8,8 @@ import streamlit as st
 
 from transcriber import transcribe  # uses your existing function
 
-st.set_page_config(page_title="Transcribe Audio", page_icon="🎙️", layout="wide")
-st.title("🎙️ Transcribe Audio")
+st.set_page_config(page_title="Transcribe Audio", layout="wide")
+st.title("Transcribe Audio")
 
 st.write("Upload an audio file to generate a transcript. Nothing is written to disk — all in memory.")
 
@@ -44,9 +44,9 @@ if audio_file is not None:
             st.warning("No speech detected or transcription is empty.")
             st.stop()
 
-        st.success("Transcription complete ✅")
+        st.success("Transcription complete ")
 
-        st.subheader("📝 Transcript")
+        st.subheader("Transcript")
 
         # Show transcript in a read-only, scrollable box.
         st.text_area("Transcript", value=text, height=280, label_visibility="collapsed")
@@ -79,7 +79,7 @@ if audio_file is not None:
 
         # Download .txt
         st.download_button(
-            "⬇️ Download Transcript (.txt)",
+            "Download Transcript (.txt)",
             data=text,
             file_name="transcript.txt",
             mime="text/plain",
@@ -88,6 +88,6 @@ if audio_file is not None:
 
         # Quick link to analysis page with instructions
         st.info("Next step: paste this transcript into **Analyse Transcript** to get key points, action items, topics, and sentiment.")
-        st.page_link("pages/2_Analyse_Transcript.py", label="Go to Analyse Transcript →", icon="➡️")
+        st.page_link("pages/2_Analyse_Transcript.py", label="Go to Analyse Transcript →" )
 else:
     st.info("Please upload an audio file to begin.")
