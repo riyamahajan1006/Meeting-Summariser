@@ -3,9 +3,9 @@
 
 import streamlit as st
 
-st.set_page_config(page_title="Meeting Summariser", page_icon="📝", layout="wide")
+st.set_page_config(page_title="Meeting Summariser", layout="wide")
 
-st.title("📝 Meeting Summariser")
+st.title("Meeting Summariser")
 
 # ---------- Sidebar: About this project ----------
 with st.sidebar:
@@ -31,13 +31,13 @@ st.write("Choose what you want to do:")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("🎙️ Transcribe Audio")
+    st.subheader("Transcribe Audio")
     st.write("Upload an MP3/WAV/etc. and get a clean transcript you can copy or download.")
-    st.page_link("pages/1_Transcribe_Audio.py", label="Go to Transcribe Audio →", icon="➡️")
+    st.page_link("pages/1_Transcribe_Audio.py", label="Go to Transcribe Audio →")
 
 with col2:
-    st.subheader("🧠 Analyse Transcript")
+    st.subheader("Analyse Transcript")
     st.write("Paste an existing transcript and get key points, action items, topics, and sentiment.")
-    st.page_link("pages/2_Analyse_Transcript.py", label="Go to Analyse Transcript →", icon="➡️")
+    st.page_link("pages/2_Analyse_Transcript.py", label="Go to Analyse Transcript →")
 
 st.info("Tip: You can always switch pages from the left sidebar menu at the top of the app.")
