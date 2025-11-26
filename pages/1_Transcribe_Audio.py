@@ -2,7 +2,7 @@
 import streamlit as st
 from transcriber import transcribe_audio
 
-st.title("🎙️ Transcribe Audio File")
+st.title("Transcribe Audio File")
 
 audio_file = st.file_uploader("Upload an audio file (wav, mp3, m4a, flac...)", type=["wav","mp3","m4a","flac","ogg","aac"])
 language = st.text_input("Language (eg. en-IN, en-US)", value="en-IN")

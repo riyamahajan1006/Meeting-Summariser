@@ -1,0 +1,10 @@
+streamlit
+sounddevice
+scipy
+numpy
+speechrecognition
+pydub
+nltk
+rake-nltk
+vaderSentiment
+summa
