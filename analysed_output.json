@@ -12,5 +12,14 @@
         "motivate students",
         "virtual tutors"
     ],
-    "sentiment": "Positive"
+    "sentiment": {
+        "positive_percent": 100.0,
+        "neutral_percent": 0.0,
+        "negative_percent": 0.0,
+        "dominant_sentiment": "Positive"
+    },
+    "stats": {
+        "word_count": 95,
+        "sentence_count": 1
+    }
 }
